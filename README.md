@@ -2,7 +2,7 @@
 A canal client for golang; 
 
 ## 说明
-icanal是一个[alibba canal](https://github.com/alibaba/canal)的golang client，灵感来源于[go-canal](https://github.com/withlin/canal-go)；但是比canal-go要更稳定和面像地道的golang设计，支持更灵活的配置化
+icanal是一个[alibaba canal](https://github.com/alibaba/canal)的golang client，灵感来源于[go-canal](https://github.com/withlin/canal-go)；但是比canal-go要更稳定和面像地道的golang设计，支持更灵活的配置化
 
 
 ## 使用
