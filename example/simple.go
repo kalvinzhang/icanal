@@ -1,16 +1,16 @@
-# icanal
-A canal client for golang; 
+package main
 
-## 说明
-icanal是一个[alibba canal](https://github.com/alibaba/canal)的golang client，灵感来源于[go-canal](https://github.com/withlin/canal-go)；但是比canal-go要更稳定和面像地道的golang设计，支持更灵活的配置化
+import (
+	"context"
+	"log/slog"
+	"time"
 
+	"github.com/kalvinzhang/icanal"
+	"github.com/kalvinzhang/icanal/example/util"
+)
 
-## 使用
-Simple Connector
-
-> 参照 [example/simple.go](https://github.com/kalvinzhang/icanal/blob/main/example/simple.go)
-```go
-    ctx := context.TODO()
+func main() {
+	ctx := context.TODO()
 	connector := icanal.NewSimpleConnector(
 		"127.0.0.1:11111", "example",
 		icanal.WithUsername("canal"),
@@ -41,4 +41,5 @@ Simple Connector
 
 		util.PrintEntry(ctx, message.Entries)
 	}
-```
+
+}
